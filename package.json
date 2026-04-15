@@ -1,0 +1,16 @@
+{
+  "name": "thiagosdungeon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Thiago's Dungeon — monorepo (client + auth-server)",
+  "scripts": {
+    "install:all": "npm install && npm --prefix auth-server install && npm --prefix client install",
+    "dev": "concurrently -n auth,client -c magenta,cyan \"npm --prefix auth-server run dev\" \"npm --prefix client run dev\"",
+    "dev:server": "npm --prefix auth-server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

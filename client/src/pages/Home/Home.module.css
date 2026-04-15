@@ -1,0 +1,43 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.title {
+    max-width: 600px;
+    width: 90vw;
+}
+
+.gifContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.gifContainer img {
+    max-width: 90vw;
+    border-radius: 12px;
+}
+
+.btnEnter {
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, #6a0dad, #9b30ff);
+    color: #e8d9ff;
+    border: 2px solid #9b30ff;
+    border-radius: 8px;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.2s;
+    display: inline-block;
+}
+
+.btnEnter:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(155, 48, 255, 0.35);
+}
